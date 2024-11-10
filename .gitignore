@@ -1,0 +1,8 @@
+/**/.mvn
+/ui/frontend/yarn.lock
+/**/.idea
+.idea
+/**/.DS_Store
+DS_Store
+
+/api/src/main/resources/application.properties

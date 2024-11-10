@@ -1,0 +1,59 @@
+
+POST http://localhost:9002/api/v1/registration
+Content-Type: application/json
+
+{
+    "username": "shawal",
+    "firstName": "Nur A Shawal",
+    "lastName": "Siddique",
+    "email": "nsiddique@miu.edu",
+    "mobile": "6412330752"
+}
+
+
+
+###
+POST http://localhost:9002/api/v1/sign-in
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c3IiOiJzaGF3YWwiLCJpYXQiOjE3Mjk2MzE5MzksImV4cCI6MTcyOTY3MTUzOSwic3ViIjoic2hhd2FsIn0.cqc0BtsrR5MYMqABNLKfDAjz07P9RNXSiOG44g6AZ7-OKm2D2askG7gNjwGpjx4YcMGPJcFmDAGg8EU21yQ-sA
+
+{
+  "username": "shawal",
+  "password": "Abcd1234.",
+  "email": "nsiddique@miu.edu"
+}
+
+###
+GET http://localhost:9002/api/v1/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c3IiOiJzaGF3YWwiLCJpYXQiOjE3Mjk3MTU1NDUsImV4cCI6MTcyOTc1NTE0NSwic3ViIjoic2hhd2FsIn0.OrvMwywM4kGDEPbiJLYThiTcgze3H_Kbp0GL8hHkJEU7HO-Rx9rI-dMZUsYnfgXCctEwLQnkI7VfGq76juZuMg
+
+###
+POST http://localhost:9002/api/v1/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c3IiOiJzaGF3YWwiLCJpYXQiOjE3Mjk3MTU1NDUsImV4cCI6MTcyOTc1NTE0NSwic3ViIjoic2hhd2FsIn0.OrvMwywM4kGDEPbiJLYThiTcgze3H_Kbp0GL8hHkJEU7HO-Rx9rI-dMZUsYnfgXCctEwLQnkI7VfGq76juZuMg
+
+{
+  "name": "Edward",
+  "state": "Iowa",
+  "accountNo": 444,
+  "email": "edward@gmail.com",
+  "accountType": "Checking",
+  "balance": 2000.0,
+  "street": "1000 N 4th Street",
+  "city": "Fairfield",
+  "zip": 52557
+}
+
+
+###
+GET http://localhost:9002/api/v1/dashboard
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c3IiOiJzaGF3YWwiLCJpYXQiOjE3Mjk3NTc4NTEsImV4cCI6MTcyOTc5NzQ1MSwic3ViIjoic2hhd2FsIn0.R4An-r2NuvuuOVp2Fdo8w0TeYstqkLltu5ODvBFYgmpO-TjNxTNLlCE1rsOkMiULKUr4i4klowyKhJ6g4RsYlg
+
+
+
+###
+GET http://localhost:9002/api/v1/withdraw/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c3IiOiJzaGF3YWwiLCJpYXQiOjE3Mjk3NTc4NTEsImV4cCI6MTcyOTc5NzQ1MSwic3ViIjoic2hhd2FsIn0.R4An-r2NuvuuOVp2Fdo8w0TeYstqkLltu5ODvBFYgmpO-TjNxTNLlCE1rsOkMiULKUr4i4klowyKhJ6g4RsYlg

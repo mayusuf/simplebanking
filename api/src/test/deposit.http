@@ -1,0 +1,32 @@
+POST http://localhost:9001/api/v1/deposit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c3IiOiJzaGF3YWwiLCJpYXQiOjE3Mjk3MDU2NjAsImV4cCI6MTcyOTc0NTI2MCwic3ViIjoic2hhd2FsIn0.QTCAXpcmUg7Ho8WXXIm-R3YaM3xAFcKn9tqmTni6QV56NWzyFF1W-FbXcJLR1X3mgjsFbuKeGP8oTUN10F9UQQ
+
+{
+  "account_id": 12345,
+  "amount": 11.0,
+  "description": "deposit"
+}
+
+###
+POST http://localhost:9001/api/v1/registration
+Content-Type: application/json
+
+{
+"username": "irfan",
+"firstName": "irfan",
+"lastName": "khan",
+"email": "mdikhan@miu.edu",
+"mobile": "6412332091"
+}
+
+###
+POST http://localhost:9001/api/v1/sign-in
+Content-Type: application/json
+
+{
+    "username": "irfan",
+    "password": "Abcd1234.",
+    "email": "mdikhan@miu.edu"
+}
+

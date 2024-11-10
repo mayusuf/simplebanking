@@ -1,0 +1,11 @@
+
+main{
+  margin-top:76px;
+}
+
+.bi::before {
+  display: inline-block;
+  content: "";
+  vertical-align: -.125em; background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
